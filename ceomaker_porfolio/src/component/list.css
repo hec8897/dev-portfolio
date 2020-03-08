@@ -1,0 +1,23 @@
+div.images-group{
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+
+}
+
+div.images{
+    width: 250px;
+    height: 250px;
+    background-color: whitesmoke;
+    vertical-align: middle;
+    margin: 10px;
+    display: inline-block;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: all 1s;
+  }
+
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }
