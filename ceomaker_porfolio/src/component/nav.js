@@ -4,7 +4,8 @@ import './nav.css';
 const Nav = {
     props: ['cate'],
     template: `<ul>
-                    <li class='nav_li active' @click="SearchCate($event,'all')">전체</li>
+                    <li class='nav_li active' @click="SearchCate($event,'Recently')">최근활동</li>
+                    <!-- <li class='nav_li' @click="SearchCate($event,'all')">전체</li> -->
                     <li class='nav_li' v-for='list in lists' @click='SearchCate($event,list)'>{{list}}</li>
                </ul>`,
     data(){
