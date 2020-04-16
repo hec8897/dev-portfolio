@@ -5,7 +5,7 @@
             <div id='wrap'>
                     <b-row class='info'>
                         <transition name='fade-right'>
-                            <b-col sm='6'  v-if="scrollPositon > 500" >
+                            <b-col cols="12" sm='12' md='6' v-if="scrollPositon > 500" >
                                 <h3>Profile</h3>
                                 <div class='private_info'>
                                     <div class='photo'></div>
@@ -20,12 +20,51 @@
                                         </ul>
                                     </div>
                                 </div>
+                                <ul>
+                                    <li><b-icon-arrow-return-right></b-icon-arrow-return-right>자유 분방함 속에 책임감</li>
+                                    <li><b-icon-arrow-return-right></b-icon-arrow-return-right>포기보단 다른 방법을 찾는 집요함</li>
+                                    <li><b-icon-arrow-return-right></b-icon-arrow-return-right>멈추지 않고 성장하는 개발자</li>
+                                    <li><b-icon-arrow-return-right></b-icon-arrow-return-right>스펀지 같은 흡수력을 가진 개발자</li>
+                                </ul>
+                                <div class='resum'>
+                                    <h3>Career</h3>
+                                    <ul>
+                                        <li>
+                                            <p>대림대학교 (전문학사)</p>
+                                            <p>모바일인터넷과 전공</p>
+                                            <dd>2013.3~2019.2</dd>
+                                        </li>
+                                         <li>
+                                            <p>BM Company 웹개발자</p>
+                                            <p>html,css,js,php 개발</p>
+                                            <dd>2019.3~2020.5</dd>
+                                        </li>
+                                         <li>
+                                            <p>대림대학교 (전공심화)</p>
+                                            <p>모바일인터넷과 학사과정</p>
+                                            <dd>2020.3~2021.2</dd>
+                                        </li>
+                                    </ul>
+                                </div>
                             </b-col>
                         </transition>
                         <transition name='fade-left'>
-                            <b-col sm='6' v-if="scrollPositon > 500" >
-                                <h3>Profile</h3>
-                                <div class='private_info'></div>
+                            <b-col cols="12" sm='12' md='6' v-if="scrollPositon > 500" >
+                                <h3>Skill</h3>
+                                <div class='skill_info'>
+                                    <ul>
+                                        <li>html5,css3 웹 표준 마크업</li>
+                                        <li>SEO 구글,네이버 웹마스터 도구 등록 경험</li>
+                                        <li>css animation(keyframe,transform) 제작</li>
+                                        <li>css preprocessor (less,scss) 활용</li>
+                                        <li>jquery 활용</li>
+                                        <li>javascript es6 개발</li>
+                                        <li>webpack,bable 활용</li>
+                                        <li>Vue.js(vue,router,vuex) 개발 경험</li>
+                                        <li>react, react native 학습 중</li>
+                                        <li>기초 php 가능 (mysql 연동)</li>
+                                    </ul>
+                                </div>
                             </b-col>
                         </transition>
 
@@ -101,14 +140,13 @@
                 margin-bottom: 20px;
             }
             div.photo{
-                width: 40%;
-                max-width: 190px;
-                height: 280px;
+                width: 150px;
+                height: 200px;
                 background: dodgerblue;
                 display: inline-block;
             }
             div.infos{
-                width: 55%;
+                width: 60%;
                 height: 100%;
                 float: right;
                 vertical-align: top;
@@ -123,7 +161,7 @@
                     color: #666;
                 }
                 ul{
-                    margin-top: 10px;
+                    margin-top: 20px;
                     padding-left: 5px;
                     li{
                         list-style: none;
@@ -133,6 +171,42 @@
                             margin-right: 5px;
                         }
                     }
+                }
+            }
+            ul{
+                padding-left: 10px;
+                margin-top:20px;
+                li{
+                    list-style: none;
+                    font-size: 1.0rem;
+                    margin-bottom: 5px;
+                    svg{
+                        margin-right: 5px;
+                    }
+                }
+            }
+            div.resum{
+                margin-top: 30px;
+                ul{
+                    li{
+                        width: 33%;
+                        display: inline-block;
+                        vertical-align: bottom;
+                        p{
+                            font-size:0.875rem;
+                        }
+                        dd{
+                            font: size 0.875rem;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        div.skill_info{
+            ul{
+                li{
+
                 }
             }
         }
